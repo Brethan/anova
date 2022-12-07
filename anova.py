@@ -6,7 +6,7 @@ conc20 = [19, 25, 22, 23, 18, 20]
 factors = [conc5, conc10, conc15, conc20]
 
 def sse(treatments: list[list[int]]) -> float:
-	sse = 0
+	sse = 0 # comment
 	for sample in treatments:
 		mean = 0
 		for x in sample:	
