@@ -5,10 +5,16 @@ conc10 = [12, 17, 13, 18, 19, 15]
 conc15 = [14, 18, 19, 17, 16, 18]
 conc20 = [19, 25, 22, 23, 18, 20]
 
+# Build treatment samples above, enter in treatments array
 treatments = [conc5, conc10, conc15, conc20]
 
 
 def calculateSSE(treatments: List[List[int]]) -> float:
+    '''
+    Calculates the Sum of Squares of random Error for each treatment
+    
+    Implements SSE = ∑∑ (y_ij - yBar_i)^2
+    '''
     sse = 0  # comment
     for sample in treatments:
         mean = 0
